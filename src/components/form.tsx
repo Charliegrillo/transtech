@@ -2,8 +2,6 @@
 
 import { login } from '@/lib/actions';
 import { useFormState } from 'react-dom';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
 
 const initialState = {
 	message: "",
@@ -20,16 +18,16 @@ const Form = (props:any) => {
 			</div>
 			<div className='flex flex-row'>
 				<form action={dispatch} className='space-y-4 w-full max-w-sm'>
-					<Input required name='username' placeholder='username' />
-					<Input
+					<input required name='username' placeholder='username' />
+					<input
 						required
 						name='password'
 						type='password'
 						placeholder='password'
 					/>
-					<Button variant='secondary' className='w-full' type='submit'>
+					<button className='w-full' type='submit'>
 						Submit
-					</Button>
+					</button>
 					<p>{errorMsg}</p>
 				</form>
 			</div>
