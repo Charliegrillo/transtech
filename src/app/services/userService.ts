@@ -1,3 +1,5 @@
+import { cookies } from 'next/headers'
+
 export const userService = {
     authenticate
 };
@@ -12,6 +14,8 @@ export interface User {
   }
 
 async function authenticate(username: string, password: string, ressellerID: string) {
+    const cookieStore = cookies();
+
     const credentials = {
         "username": username,
         "password": password
@@ -24,7 +28,8 @@ async function authenticate(username: string, password: string, ressellerID: str
       headers: { "Content-Type": "application/json" }
     })
     const responseToken = await reqToken.json()    
-    console.log("responseToken",responseToken);
+    cookies().set('reqToken', `${urlAPI}/auth/signin/${ressellerID}`);
+
 
     if (reqToken.ok && responseToken) {
         const reqUser = await fetch(`${urlAPI}/user/profile`, {
@@ -32,6 +37,8 @@ async function authenticate(username: string, password: string, ressellerID: str
             headers: { "Content-Type": "application/json", "Authorization": "Bearer " +  responseToken.accessToken}
           })
           const responseUser = await reqUser.json();
+          cookies().set('responseUser', JSON.stringify(responseUser));
+
           const sessionUser: User = {
             name: responseUser.firstName,
             email: responseUser.email,
