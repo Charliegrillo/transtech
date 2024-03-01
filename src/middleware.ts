@@ -12,7 +12,7 @@ export default auth((req) => {
 	const hostname = req.headers.get("host");
 	const request = requestInfo(hostname);
   
-	const allowedDomains = ["localhost", "transtech-test.vercel.app"];
+	const allowedDomains = ["localhost", "vercel.app"];
 	const isAllowedDomain = allowedDomains.some(domain => request.domain.includes(domain));
   
 	if (isAllowedDomain && (!request.subDomain)) {

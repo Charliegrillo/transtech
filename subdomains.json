@@ -1,4 +1,5 @@
 [
     { "subdomain": "reseller-a" },
-    { "subdomain": "reseller-b" }
+    { "subdomain": "reseller-b" },
+    { "subdomain": "transtech-test" }
 ]
