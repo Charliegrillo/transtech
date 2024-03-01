@@ -1,0 +1,17 @@
+[
+    { 
+        "domain" : ["reseller-a.localhost","reseller-a.tudominio.test"], 
+        "name": "Test Reseller A" ,
+        "ressellerID": "6571df3b99343fcb755aff3e"
+    },
+    {
+        "domain" : ["reseller-b.localhost","reseller-b.tudominio.test"], 
+         "name": "Test Reseller B" ,
+         "ressellerID": "6571df5399343fcb755aff3f"
+    },
+    { 
+        "domain" : ["localhost","tudominio.test"], 
+        "name": "TransTech",
+        "ressellerID": "655e5ad61fbfba77cc971db0"
+     }
+]
