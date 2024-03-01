@@ -1,16 +1,16 @@
 [
     { 
-        "domain" : ["reseller-a.localhost","reseller-a.tudominio.test"], 
+        "domain" : ["reseller-a.localhost","reseller-a.dev-server.site"], 
         "name": "Test Reseller A" ,
         "ressellerID": "6571df3b99343fcb755aff3e"
     },
     {
-        "domain" : ["reseller-b.localhost","reseller-b.tudominio.test"], 
+        "domain" : ["reseller-b.localhost","reseller-b.dev-server.site"], 
          "name": "Test Reseller B" ,
          "ressellerID": "6571df5399343fcb755aff3f"
     },
     { 
-        "domain" : ["localhost","transtech-test.vercel.app"], 
+        "domain" : ["localhost","dev-server.site"], 
         "name": "TransTech",
         "ressellerID": "655e5ad61fbfba77cc971db0"
      }
