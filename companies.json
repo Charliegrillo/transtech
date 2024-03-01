@@ -10,7 +10,7 @@
          "ressellerID": "6571df5399343fcb755aff3f"
     },
     { 
-        "domain" : ["localhost","tudominio.test"], 
+        "domain" : ["localhost","transtech-sigma.vercel.app"], 
         "name": "TransTech",
         "ressellerID": "655e5ad61fbfba77cc971db0"
      }
