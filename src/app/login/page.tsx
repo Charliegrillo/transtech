@@ -6,6 +6,7 @@ const Login = async () => {
 
 	return (
 		<main className='flex items-center justify-center h-screen w-screen'>
+			{JSON.stringify(company)}
 			<Form resseller= {company}/>
 		</main>
 	);
